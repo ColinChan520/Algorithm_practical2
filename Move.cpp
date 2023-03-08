@@ -33,20 +33,23 @@
                 return false;
             }
 
-            else if(a->getName() == "Monkey" && b->getName() == "Ninja" || b->getName() == "Robot"){
+            else if(a->getName() == "Monkey" && (b->getName() == "Ninja" || b->getName() == "Robot")){
                 return true;
             }
-            else if(a->getName() == "Robot" && b->getName() == "Ninja" || b->getName() == "Zombie"){
+            else if(a->getName() == "Robot" && (b->getName() == "Ninja" || b->getName() == "Zombie")){
                 return true;
             }
-            else if(a->getName() == "Pirate" && b->getName() == "Robot" || b->getName() == "Monkey"){
+            else if(a->getName() == "Pirate" && (b->getName() == "Robot" || b->getName() == "Monkey")){
                 return true;
             }
-            else if(a->getName() == "Ninja" && b->getName() == "Pirate" || b->getName() == "Zombie"){
+            else if(a->getName() == "Ninja" && (b->getName() == "Pirate" || b->getName() == "Zombie")){
                 return true;
             }
-            else if(a->getName() == "Zombie" && b->getName() == "Pirate" || b->getName() == "Monley"){
+            else if(a->getName() == "Zombie" && (b->getName() == "Pirate" || b->getName() == "Monley")){
                 return true;
+            }
+            else{
+                return NULL;
             }
         }
 

@@ -10,7 +10,7 @@ class Human : public Player{
         
         Move * makeMove();
         
-        std::string setName(string name);
+        std::string setName(std::string name);
         std::string getName();
     private:
         std::string nameOfHuman = "Human";

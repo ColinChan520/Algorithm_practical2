@@ -6,6 +6,6 @@
             return move;
         }
 
-        string  Computer::getName(){
+        std::string  Computer::getName(){
             return Computer::nameOfComputer;
         }

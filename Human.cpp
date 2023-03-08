@@ -1,21 +1,19 @@
 #include "Human.h"
-
-using namespace std;
         
         Move * Human::makeMove(){
-            cout << "Enter move:" << endl;
+            std::cout << "Enter move:" << std::endl;
             Move* move;
-            string input;
-            cin >> input;
+            std::string input;
+            std::cin >> input;
             move->setName(input);
             return move;
         }
         
-        string Human::setName(string name){
+        std::string Human::setName(std::string name){
             Human::nameOfHuman = name;
             return name;
         }
 
-        string Human::getName(){
+        std::string Human::getName(){
             return Human::nameOfHuman;
         }

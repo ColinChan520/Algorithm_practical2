@@ -1,13 +1,12 @@
 #include "Move.h"
+#include <string>
 
-using namespace std;
-
-        string Move::setName(string name){
+        std::string Move::setName(std::string name){
             Move::moveChoice = name;
             return name;
         }
 
-        string Move::getName(){
+        std::string Move::getName(){
             return Move::moveChoice;
         }
 

@@ -6,7 +6,7 @@
 class Move{
     public:
     
-    std::string setName(string name);
+    std::string setName(std::string name);
     std::string getName();
         bool compare(Move*a, Move*b);
     private:

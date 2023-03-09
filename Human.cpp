@@ -5,9 +5,6 @@
         }
 
         Human::Human(std::string playerName) : nameOfHuman(playerName) {}
-        // Human::Human(std::string playerName){
-        //     Human::nameOfHuman = playerName;
-        // }
 
         Move * Human::makeMove(){
             std::cout << "Enter move:" << std::endl;

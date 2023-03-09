@@ -10,7 +10,7 @@ int main(){
     Human *f = new Human();
     Computer *c = new Computer();
     Referee *r =  new Referee();
-    Player * winner = r->refGame(h,f);
+    Player * winner = r->refGame(h,c);
     std::cout << winner->getName() << std::endl;
     return 0;
 

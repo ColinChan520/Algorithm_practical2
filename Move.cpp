@@ -11,51 +11,47 @@
             return Move::moveChoice;
         }
 
-        bool Move::compare(Move*a, Move*b){
+        int Move::compare(Move*a, Move*b){
             if(a->getName() == b->getName()){
                 
-                return NULL; 
+                return 2; 
             }
             else if(a->getName() == "Paper" && b->getName() == "Rock"){
-                return true;
+                return 1;
             }
             else if(a->getName() == "Rock" && b->getName() == "Paper"){
-                return false;
+                return 0;
             }
             else if(a->getName() == "Paper" && b->getName() == "Scissors"){
-                return false;
+                return 0;
             }
             else if(a->getName() == "Scissors" && b->getName() == "Paper"){
-                return true;
+                return 1;
             }
             else if(a->getName() == "Rock" && b->getName() == "Scissors"){
-                return true;
+                return 1;
             }
             else if(a->getName() == "Scissors" && b->getName() == "Rock"){
-                return false;
+                return 0;
             }
 
             else if(a->getName() == "Monkey" && (b->getName() == "Ninja" || b->getName() == "Robot")){
-                return true;
+                return 1;
             }
             else if(a->getName() == "Robot" && (b->getName() == "Ninja" || b->getName() == "Zombie")){
-                return true;
+                return 1;
             }
             else if(a->getName() == "Pirate" && (b->getName() == "Robot" || b->getName() == "Monkey")){
-                return true;
+                return 1;
             }
             else if(a->getName() == "Ninja" && (b->getName() == "Pirate" || b->getName() == "Zombie")){
-                return true;
+                return 1;
             }
             else if(a->getName() == "Zombie" && (b->getName() == "Pirate" || b->getName() == "Monley")){
-                return true;
+                return 1;
             }
             else{
-                std::cout << "****" << std::endl;
-                std::cout << a->getName() << std::endl;
-                std::cout << b->getName() << std::endl;
-                std::cout << "****" << std::endl;
-                return NULL;
+                return 2;
             }
         }
 

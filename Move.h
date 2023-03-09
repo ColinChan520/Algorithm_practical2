@@ -8,7 +8,7 @@ class Move{
     
     std::string setName(std::string name);
     std::string getName();
-        bool compare(Move*a, Move*b);
+        int compare(Move*a, Move*b);
     private:
          std::string moveChoice;
 };

@@ -12,6 +12,8 @@
         bool result = move->compare(player1move, player2move);
 
         if(result == NULL){
+          std::cout << player1->getName() << std::endl;  
+          std::cout << player2->getName() << std::endl; 
           return nullptr;  
         }
         else if(result == true){

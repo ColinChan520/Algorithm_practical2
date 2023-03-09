@@ -13,10 +13,7 @@
 
         bool Move::compare(Move*a, Move*b){
             if(a->getName() == b->getName()){
-                std::cout << "****" << std::endl;
-                std::cout << a->getName() << std::endl;
-                std::cout << b->getName() << std::endl;
-                std::cout << "****" << std::endl;
+                
                 return NULL; 
             }
             else if(a->getName() == "Paper" && b->getName() == "Rock"){
@@ -54,6 +51,10 @@
                 return true;
             }
             else{
+                std::cout << "****" << std::endl;
+                std::cout << a->getName() << std::endl;
+                std::cout << b->getName() << std::endl;
+                std::cout << "****" << std::endl;
                 return NULL;
             }
         }

@@ -9,13 +9,18 @@
         Move* player1move = player1->makeMove();
         Move* player2move = player2->makeMove();
         
-        bool result = move->compare(player1move, player2move);
-
-        if(result == NULL){
-          std::cout << "----" << std::endl;
+        std::cout << "----" << std::endl;
           std::cout << player1->getName() << std::endl;  
           std::cout << player2->getName() << std::endl; 
           std::cout << "----" << std::endl;
+        
+        std::cout << "****" << std::endl;
+                std::cout << player1move->getName() << std::endl;
+                std::cout << player2move->getName() << std::endl;
+                std::cout << "****" << std::endl;
+        bool result = move->compare(player1move, player2move);
+
+        if(result == NULL){
           return nullptr;  
         }
         else if(result == true){

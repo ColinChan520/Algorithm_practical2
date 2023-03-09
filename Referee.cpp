@@ -4,7 +4,7 @@
 
     Player* Referee::refGame(Player*player1, Player*player2){  
         
-        Move* move;
+        Move* move = new Move();
         
         Move* player1move = player1->makeMove();
         Move* player2move = player2->makeMove();
@@ -22,5 +22,7 @@
         else{
             return nullptr;
         }
+
+        delete move;
      }
               

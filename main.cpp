@@ -6,10 +6,12 @@
 
 int main(){
 
-    Human *h;
-    Computer *c;
-    Referee r;
-    r.refGame(h,c);
+    Human *h = new Human();
+    Human *f = new Human();
+    Computer *c = new Computer();
+    Referee *r =  new Referee();
+    Player * winner = r->refGame(h,f);
+    std::cout << winner->getName() << std::endl;
     return 0;
 
 }

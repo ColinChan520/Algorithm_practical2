@@ -1,7 +1,7 @@
 #include "Computer.h"
 
         Move* Computer::makeMove(){
-            Move* move;
+            Move* move = new Move();
             move->setName("Rock");
             return move;
         }

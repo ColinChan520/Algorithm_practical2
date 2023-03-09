@@ -1,5 +1,9 @@
 #include "Human.h"
         
+        Human::Human(){
+            
+        }
+
         Human::Human(std::string playerName){
             Human::nameOfHuman = playerName;
         }

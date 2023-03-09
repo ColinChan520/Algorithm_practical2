@@ -9,8 +9,8 @@ class Human : public Player{
     public:
         
         Move * makeMove();
+        Human(std::string playerName);
         
-        std::string setName(std::string name);
         std::string getName();
     private:
         std::string nameOfHuman = "Human";

@@ -20,16 +20,16 @@
             else if(a->getName() == "Rock" && b->getName() == "Paper"){
                 return false;
             }
-            else if(a->getName() == "Paper" && b->getName() == "Scissor"){
+            else if(a->getName() == "Paper" && b->getName() == "Scissors"){
                 return false;
             }
-            else if(a->getName() == "Scissor" && b->getName() == "Paper"){
+            else if(a->getName() == "Scissors" && b->getName() == "Paper"){
                 return true;
             }
-            else if(a->getName() == "Rock" && b->getName() == "Scissor"){
+            else if(a->getName() == "Rock" && b->getName() == "Scissors"){
                 return true;
             }
-            else if(a->getName() == "Scissor" && b->getName() == "Rock"){
+            else if(a->getName() == "Scissors" && b->getName() == "Rock"){
                 return false;
             }
 

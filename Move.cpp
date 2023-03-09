@@ -1,5 +1,6 @@
 #include "Move.h"
 #include <string>
+#include<iostream>
 
         std::string Move::setName(std::string name){
             Move::moveChoice = name;
@@ -49,6 +50,7 @@
                 return true;
             }
             else{
+                std::cout << "winner->getName()" << std::endl;
                 return NULL;
             }
         }
